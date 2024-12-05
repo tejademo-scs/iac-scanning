@@ -12,13 +12,5 @@ resource "azurerm_key_vault" "key_vault" {
   network_acls {
     bypass                = "AzureServices"
     default_action        = var.default_action
-    ip_rules              = var.ip_rules
-    virtual_network_subnet_ids = var.subnet_ids
   }
 
-  timeouts {
-    create = "15m"
-    update = "15m"
-    delete = "15m"
-  }
-}
