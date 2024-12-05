@@ -9,11 +9,11 @@ variable "soft_delete_retention_days" {
 }
 
 variable "purge_protection_enabled" {
-   type = boolean
+   type = bool
    default = true
 }
 
 variable "enabled_for_disk_encryption" {
-   type = boolean
+   type = bool
    default = false
 }
